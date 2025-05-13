@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap');
+
+:root{
+     /* Font */
+    --Raleway:"Raleway", serif ;
+
+    --poppins: "Poppins", sans-serif;
+      
+
+    --cor1: #E11138;
+    --cor2: #ECEDF2;
+    --cor3: #FFFFFF;
+    --cor4: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  var(--poppins);
+}
+
+body{
+    background-color: var(--cor2);
+}
+
+header{
+    background-color: var(--cor3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+header .logo img{
+    width: 180px;
+    height: 180px;
+}
+
+header .menu ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin-right: 125px;
+}
+
+
+header .menu ul li a{
+    text-decoration: none;
+    color: #626168;
+    font-size: 14px;
+}
+
+header .menu ul li a:hover{
+    opacity: 0.8;
+    border-bottom: 2px solid var(--cor1);
+}
+
+header .icons ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-right: 25px;
+}
+
+header .icons ul li a{
+    text-decoration: none;
+    color: #626168;
+    font-size: 14px;
+}
+
+header .icons ul li a:hover{
+    opacity: 0.8;
+    color: var(--cor1);
+}
+
+footer{
+    background-color: #2E2D37;
+}
+
+footer .footer{
+    background-color: var(--cor1);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--cor3);
+    padding: 20px;
+}
+
+footer .footer a{
+    color: #ECEDF2;
+}

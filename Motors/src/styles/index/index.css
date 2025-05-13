@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap');
+
+:root{
+     /* Font */
+    --Raleway:"Raleway", serif ;
+
+    --poppins: "Poppins", sans-serif;
+      
+
+    --cor1: #E11138;
+    --cor2: #ECEDF2;
+    --cor3: #FFFFFF;
+    --cor4: #000;
+    --cor5: #696977;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:  var(--poppins);
+}
+
+.banner{
+    background-color: #E11138;
+    height: 43vh;
+}
+
+.container .title_block{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 35px 170px;
+    color: #696977;
+}
+
+.container .blocos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.container .blocos a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container .blocos .bloco{
+    background-color: var(--cor3);
+    border: 1px solid #6969778a;
+    border-radius: 10px;
+    width: 290px;
+    padding: 10px;
+    height: 200px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .blocos .bloco .icon img{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #FFEAEA;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.container .blocos .bloco h3{
+    margin: 0px 10px 0px 10px ;
+    font-size: 22px;
+}
+
+.container .blocos .bloco .description{
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    min-height: 40px; 
+}
+
+.search .title_block{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 35px 170px;
+    color: #696977;
+}
+
+.search .search_card{
+    display: flex;
+    gap: 15px;
+    margin-left: 150px;
+}
+
+.search .search_card .car-card {
+  width: 170px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: var(--poppins);
+}
+
+.search .search_card .car-title {
+  background-color: #646473; /* tom de cinza escuro */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.search .search_card .car-footer {
+  background-color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.search .search_card .location-button {
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.store .title_block{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 35px 170px;
+    color: #696977;
+}
+
+.store .store_card{
+    display: flex;
+    gap: 15px;
+    margin-left: 150px;
+}
+
+.store .store_card{
+
+    display: flex;
+    gap: 15px;
+    margin-left: 150px;
+}
+
+.store .store_card .marca-card{
+    background-color: var(--cor3);
+    padding: 30px ;
+    border-radius: 100%;
+    border: 3px solid #6969778a;
+}
+
+.store .store_card .marca-card img{
+    width: 80px;
+    height: 80px;
+}
+
+.search_car .title_block{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 35px 170px;
+    color: #696977;
+}
+
+.search_car .src_cars{
+    display: flex;
+    gap: 20px;
+    margin-left: 170px;
+    margin-bottom: 30px;
+}
+
+.search_car .src_cars .card_car{
+    background-color: var(--cor3);
+    width: 210px;
+    border-radius: 5px;
+}
+
+.search_car .src_cars .card_car a{
+    color: #000;
+}
+
+
+.search_car .src_cars .card_car h3{
+    font-weight: 500;
+    font-size: 17px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.search_car .src_cars .card_car strong{
+    display: block;
+    line-height: 16px;
+    font-weight: 800;
+    font-size: 22px;
+    color: #E11138;
+}
+
+.search_car .src_cars .card_car img{
+    background-size: cover;
+    padding: 15px 0;
+}
