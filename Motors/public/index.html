@@ -27,11 +27,22 @@
         <nav class="icons">
             <ul>
                 <li><a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar</a></li>
-                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li id="searchIcon"><a href="javascript:void(0)"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+        <input type="text" placeholder="Digite marca, modelo ou palavra-chave...">
+        <button class="search-btn">Pesquisar</button>
+        <button class="close-search" id="closeSearch">&times;</button>
+    </div>
+
+    
+</div>
+
 
     <section class="banner"></section>
 
@@ -200,6 +211,108 @@
         <div class="footer">
             Nossos canais de atendimento são 100% digitais. Precisa de ajuda? <strong><a href="">Clique aqui</a></strong>
         </div>
+
+        <div class="footer_cow">
+            <div class="footer_col">
+                <div class="row_footer">
+                    <div>
+                        <span><strong>Comprar</strong></span>
+                        <ul>
+                            <li><a href="">Carros usados</a></li>
+                            <li><a href="">Carros novos</a></li>
+                            <li><a href="">Motos usadas</a></li>
+                            <li><a href="">Motos novas</a></li>
+                            <li><a href="">Vistoriado</a></li>
+                        </ul>
+                    </div>
+                     <div>
+                        <span><strong>Vender</strong></span>
+                        <ul>
+                            <li><a href="">Vender carro</a></li>
+                            <li><a href="">Vender moto</a></li>
+                            <li><a href="">Gerenciar meu anuncio</a></li>
+                            <li><a href="">Plataforma revendedores</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+             <div class="footer_col">
+                <div class="row_footer">
+                    <div>
+                        <span><strong>Assinar</strong></span>
+                        <ul>
+                            <li><a href="">Carros Por assinatura</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row_footer">
+                    <div>
+                        <span><strong>Serviços</strong></span>
+                        <ul>
+                            <li><a href="">Horizon serviços</a></li>
+                            <li><a href="">Financiamento</a></li>
+                            <li><a href="">Catálogo 0km</a></li>
+                            <li><a href="">Vistoriado</a></li>
+                            <li><a href="">Plataforma revendedores </a></li>
+                            <li><a href="">Seguro veículo</a></li>
+                            <li><a href="">Multas e Débitos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_col">
+                <div class="row_footer">
+                    <div>
+                        <span><strong>Notícias</strong></span>
+                        <ul>
+                            <li><a href="">Portal</a></li>
+                            <li><a href="">Ultimas notícias</a></li>
+                            <li><a href="">Testes</a></li>
+                            <li><a href="">Comparativos</a></li>
+                            <li><a href="">Vídeos</a></li>
+                            <li><a href="">Motos</a></li>
+                            <li><a href="">Segredos</a></li>
+                            <li><a href="">Dicas</a></li>
+                            <li><a href="">Bolso</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_col">
+                <div class="row_footer">
+                    <div>
+                        <span><strong>Ajuda</strong></span>
+                        <ul>
+                            <li><a href="">Para você</a></li>
+                            <li><a href="">Para a sua loja</a></li>
+                            <li><a href="">Segurança</a></li>
+                            <li><a href="">Quem somos</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row_footer">
+                    <div>
+                        <span><strong>Institucional </strong></span>
+                        <ul>
+                            <li><a href="">Canal de ética</a></li>
+                            <li><a href="">Codigo de conduta Horizon</a></li>
+                            <li><a href="">Catálogo 0km</a></li>
+                            <li><a href="">Codigo de defesa</a></li>
+                            <li><a href="">LGPD </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">© 1995-2025 Horizon S.A. Todos os direitos reservados.</div>
     </footer>
 </body>
+<script src="../src/scripts/search.js"></script>
 </html>

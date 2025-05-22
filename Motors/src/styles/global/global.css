@@ -55,7 +55,7 @@ header .menu ul{
 header .menu ul li a{
     text-decoration: none;
     color: #626168;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 header .menu ul li a:hover{
@@ -73,12 +73,91 @@ header .icons ul{
 header .icons ul li a{
     text-decoration: none;
     color: #626168;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 header .icons ul li a:hover{
     opacity: 0.8;
     color: var(--cor1);
+}
+
+.search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.search-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.search-container {
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 20px 60px 20px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+}
+
+.search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--cor1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-search {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .search-container input {
+        padding: 15px 50px 15px 15px;
+        font-size: 16px;
+    }
+    
+    .search-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .close-search {
+        right: -30px;
+        font-size: 24px;
+    }
 }
 
 footer{
@@ -96,4 +175,43 @@ footer .footer{
 
 footer .footer a{
     color: #ECEDF2;
+}
+
+footer .footer a:hover{
+    border-bottom: 2px solid var(--cor2);
+}
+
+footer .footer_cow{
+    display: flex;
+
+}
+
+footer .footer_col{
+    margin: 5px 50px;
+}
+
+footer .footer_col .row_footer{
+    margin: 50px;
+}
+
+footer .footer_col .row_footer span{
+    color: var(--cor3);
+    font-size: 18px;
+}
+
+footer .footer_col .row_footer ul{
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+footer .footer_col .row_footer ul li a{
+    color: var(--cor3);
+    font-size: 12px;
+}
+
+footer .footer_col .row_footer ul li a:hover{
+    opacity: 0.8;
+    border-bottom: 1px solid var(--cor2);
 }
